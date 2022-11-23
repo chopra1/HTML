@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <h1>HTML Forms</h1>
+        <label>First Name: <input type="text"></label><br><br>
+        <label for="lname">Last Name:</label>  
+        <input type="text" id="lname"><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd"><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="m">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="f">Female</label><br><br>
+        <label for="subject">Please specify subject of your choice</label>
+        <label><input type="checkbox" unchecked> Biology</label>
+        <label><input type="checkbox"unchecked> Maths</label><p>(Select any one subject)</p><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="textarea">Write about yourself</label><br><br>
+        <textarea name="message" rows="10" columns="80">your experiences...</textarea><br><br>
+        <h3>Add your image file here</h3>
+        <input type="file" name="file upload" accept="image/*"><br><br>
+        <input type="image" name="button_with_an_image" src="ball.jpg" height="30 width=30">
+        <input type="Submit" name="Submit" value="Submit">
+        <input typ="Reset" name="Reset" value="Reset">
+        <input type="Button" name="ok" value="OK">
+
+        <h3>HTML Id Attributes</h3>
+        <p id="second_id">We are writing text without using id attribute so HTML element can be seen without any styling.</p>
+        <h3 id="first_id">Changes can be seen like text color, background color and font sizes</h3>
+        <style>
+            #first_id{
+               background-color: aqua;
+               color:brown;
+               font-size: 40px
+               text-align = center; 
+            }
+            #second_id{
+                text-align: center;
+                color: chocolate;
+            }
+        </style>        
+        <style>
+            h3.a 
+            {
+                color:blueviolet;
+                background-color: coral;
+                text-align: center;
+            }
+            p.b{
+                color: rgb(255, 0, 149);
+                font-size: 200;
+            }
+        </style>
+        <h3 class="a"> Class Attributes</h3>
+        <p class="b">This is a paragraph where we have added a class attribute.:)</p>
+    </form>
+</body>
+</html>
