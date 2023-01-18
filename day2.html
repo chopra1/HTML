@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #paragraph{
+        color:brown;
+    }
+    p.Paragraph{
+        color: magenta;
+
+    }
+    table,
+    th,
+    td {
+        border: 2px solid blue;
+    }
+    table.Table{
+        color: blueviolet;
+        border-color: orangered;
+    }
+</style>
+
+<body>
+<h1>Hello</h1>
+<h2>Hi</h2>
+<h3>Holla</h3>
+<h4>Gutten Morgan</h4>
+<h5>Bongour</h5>
+<h6>Hallo</h6>
+
+<div id="paragraph">
+<p> Here we can see different type of greeting. In English we use "Hi" or "Hello", Holla in Spanish, Borgour in french
+    and Hallo in German.<br> Gottem Morgan is good Morning in Germany.</p>
+</div> 
+<p class="Paragraph"> Here we can see different type of greeting. In English we use "Hi" or "Hello"</p>
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Place</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Portugal</td>
+        </tr>
+    </table>
+
+    <table class="Table">
+        <tr>
+          <th>Id.</th>
+          <th>Dept.</th>
+          <th>Name</th>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td> IT</td>
+          <td>Charlie</td>
+        </tr>
+        <tr>
+          <td>150</td>
+          <td>Sales</td>
+          <td>Claire</td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td> Marketing</td>
+          <td>Janesh</td>
+        </tr>
+      </table>
+
+    <form>
+        <h1>HTML Forms</h1>
+        <label>First Name: <input type="text"></label><br><br>
+        <label for="lname">Last Name:</label>  
+        <input type="text" id="lname"><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd"><br><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="m">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="f">Female</label><br><br>
+        <label for="subject">Please specify subject of your choice</label>
+        <label><input type="checkbox" unchecked> Biology</label>
+        <label><input type="checkbox"unchecked> Maths</label><p>(Select any one subject)</p><br>
+        </form>
+
+        <h2>The select Element</h2>
+        <p>The select elememt defines a drop-down list:</p>
+
+        <form action="/action_page.php" method="get"> //method post
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2">
+                <option value="car1" selected>Volvo</option>
+                <option value="car2">Audi</option>
+                <option value="car3">Fiat</option>
+                <option valu="car4">BMW</option> 
+            </select>
+            <input type="submit">
+        </form>
+
+</body>
+</html>
