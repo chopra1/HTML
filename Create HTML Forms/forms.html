@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheets - Forms</title>
+</head>
+<body>
+    Check box type
+    
+    <input type="checkbox" name="breakfast" value="bacon">Bacon 🥓<br>
+    <input type="checkbox" name="breakfast" value="eggs">Eggs 🍳<br>
+    <input type="checkbox" name="breakfast" value="pancakes">Pancakes 🥞<br><br><br>
+
+    <textarea rows="10" cols="30" name="comment"></textarea><br><br>
+
+    <form>
+        <form action="/forms.html" method="PUT"></form>
+        <!--<form method="post" action="http://server1">-->
+            Enter your name:
+            <input type="text" name="fname">
+            <br/>
+            Enter your age:
+            <input type="number" name="age">
+            <br/>
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname"><br>
+            <input type="checkbox" name="vehicle" value="Bike"> I own a bike<br>
+            <input type="text" name="username"><br> 
+            Range:
+            <input type="range" name="movie-rating" min="0" max="10" step="0.1"><br>
+            Datalist:
+            <input list="ide">
+            <datalist id="ide">
+            <option value="Visual Studio Code" />
+            <option value="Atom" />
+            <option value="Sublime Text" />
+            </datalist><br>
+            Pickup:<input name="delivery_option" type="radio" value="pickup" />
+            Delivery:<input name="delivery_option" type="radio" value="delivery" /><br>
+            <input name="username" id="username" />
+            <input id="address" /><br>
+            <label for="password ">Password:</label>
+            <input type="text" id="password" name="password"><br>
+            <input type="text" name="username" /><br>
+            <input type="password" name="password" /><br>
+            <input type="password" name="password" required ><br>
+            <input type="number" max="20"><br>
+            <input type="text" name="tweet" maxlength="140"><br>
+            <input type="submit" value="Submit"><br><br>
+    </form>
+
+        <form action="/action_page.php">
+            Country code: 
+            <input type="text" name="country_code" 
+                    pattern="[A-Za-z]{3}" 
+                    title="Three letter country code"><br>
+            <input type="text" name="username" minlength="6" /><br>
+            <input type="number" name="rating" min="1" max="10"><br>
+            <input type="submit">
+        </form>
+</body>
+</html>
